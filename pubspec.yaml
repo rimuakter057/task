@@ -62,7 +62,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/profile/
+    - assets/profiles/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
