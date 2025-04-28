@@ -1,38 +1,22 @@
-/*
 
 import 'package:flutter/material.dart';
+import 'package:task/app/utils/sizes.dart';
 
 
 import '../../color/app_colors.dart';
-
-class AppElevatedButtonTheme{
+class AppElevatedButtonTheme {
   AppElevatedButtonTheme._();
-  static final lightElevatedButtonThemeData = ElevatedButtonThemeData(
-  style: ElevatedButton.styleFrom(
-  backgroundColor: AppColors.white, // Background color
-  foregroundColor: Colors.blue,
-    disabledBackgroundColor: AppColors.grey,
-    disabledForegroundColor: AppColors.grey,// Text color
-    side: BorderSide(color: Colors.blue),
-  padding: EdgeInsets.symmetric( vertical: 18),
-  textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600,color: AppColors.white),
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(12), // Rounded corners
-  ),
-  )
-  );
-  static final darkElevatedButtonThemeData = ElevatedButtonThemeData(
+
+  static ElevatedButtonThemeData lightElevatedButtonThemeData(BuildContext context) {
+    return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.white, // Background color
-        foregroundColor: Colors.blue,
-        disabledBackgroundColor: AppColors.grey,
-        disabledForegroundColor: AppColors.grey,// Text color
-        side: BorderSide(color: Colors.blue),
-        padding: EdgeInsets.symmetric( vertical: 18),
-        textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600,color: AppColors.white),
+        minimumSize:  Size(AppSizes.width(context), 42),
+        backgroundColor: AppColors.primaryColor,
+        textStyle: Theme.of(context).textTheme.titleMedium,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12), // Rounded corners
+          borderRadius: BorderRadius.circular(20),
         ),
-      )
-  );
-}*/
+      ),
+    );
+  }
+}

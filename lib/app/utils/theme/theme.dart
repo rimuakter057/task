@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task/app/utils/color/app_colors.dart';
+import 'custom_theme/elevated_button_theme.dart';
 import 'custom_theme/text_field_theme.dart';
 import 'custom_theme/text_theme.dart';
 
@@ -13,7 +14,7 @@ class AppTheme {
       primaryColor: AppColors.primaryColor,
     scaffoldBackgroundColor: Colors.white,
     textTheme: AppTextTheme.lightTextTheme(context),
-   // elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonThemeData,
+   elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonThemeData(context),
     //inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme(context),
   );
 
