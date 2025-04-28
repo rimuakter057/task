@@ -16,12 +16,12 @@ class AppTextTheme {
         color: AppColors.black,
       ),
       headlineMedium: GoogleFonts.poppins(
-        fontSize: AppSizes.fontSizeLg(context),
+        fontSize: 24,
         fontWeight: FontWeight.normal,
         color: AppColors.black,
       ),
       headlineSmall:  GoogleFonts.inter(
-        fontSize: 24,
+        fontSize: 14,
         fontWeight: FontWeight.normal,
         color: AppColors.black,
       ),
@@ -29,13 +29,13 @@ class AppTextTheme {
       bodyLarge: GoogleFonts.poppins(
         fontSize: 16,
         fontWeight: FontWeight.normal,
-        color: AppColors.secondaryTextColor,
+        color: AppColors.primaryTextColor,
       ),
 
       bodyMedium: GoogleFonts.poppins(
         fontSize: 14,
         fontWeight: FontWeight.normal,
-        color: AppColors.black,
+        color: AppColors.secondaryTextColor,
       ),
 
       bodySmall:GoogleFonts.poppins(

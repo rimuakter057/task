@@ -7,7 +7,9 @@ class AssetImages{
   static const String googleIcon = '${basePath}icons/google.png';
   static const String appleIcon = '${basePath}icons/apple.png';
   static const String microsoftIcon = '${basePath}icons/microsoft.png';
-
+  static const String dropIcon = '${basePath}icons/drop_icon.png';
+  static const String dropPColor = '${basePath}icons/dropPColor.png';
+  static const String backIcon = '${basePath}icons/back.png';
   //image
   static const String flagImage = '${basePath}images/flag.png';
   static const String homeImage = '${basePath}images/home.png';

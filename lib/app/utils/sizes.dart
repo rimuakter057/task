@@ -4,6 +4,8 @@ class AppSizes {
   ///screen size
   static double width(BuildContext context) => MediaQuery.of(context).size.width;
   static double height(BuildContext context) => MediaQuery.of(context).size.height;
+  static double defaultPadding(BuildContext context) => width(context)* 0.04;
+  static double defaultXsmPadding(BuildContext context) => width(context)* 0.04;
 
   //logo
   static double logoS = 214;
@@ -15,9 +17,9 @@ class AppSizes {
   static double floatingSize = 64;
 
 //icon
-  static double iconS = 42;
-  static double iconLeadH = 8;
-  static double iconLeadW = 18;
+  //static double iconS = 42;
+ // static double iconLeadH = 8;
+ // static double iconLeadW = 18;
 
 //profile
   static double profileS = 97.14;
@@ -27,21 +29,37 @@ class AppSizes {
   static double pinFieldW = 64.86;
 
 
-//container
-  static double containerSmH = 24.03;
+//container lg
+
+  static double containerLgH = 206;
+  static double containerLgW = 402;
+  static double containerLgR = 50;
+
+  //container Xsm
+  static double containerXSmH = 24;
   static double containerXSmW = 49;
+
+
+  //container sm
+  static double containerSmH = 24.03;
   static double containerSmW = 69.79;
   static double containerSmR = 10;
+
+  //container color
   static double containerColH = 7;
   static double containerColW = 24;
   static double containerRecH = 150;
   static double containerRecW = 161;
   static double containerRecMH = 17;
   static double containerRecMW = 133;
-  static double containerCirSmH = 19;
-  static double containerCirSmW = 19;
+  static double containerCirXSmH = 19;
+  static double containerCirXSmW = 19;
+  static double containerCirSmH = 22;
+  static double containerCirSmW = 22;
+  static double containerCirSmR = 5;
   static double containerCirMdH = 46;
   static double containerCirMdW = 46;
+  static double containerCirR = 100;
 
 
 //image
@@ -52,6 +70,11 @@ class AppSizes {
   static double imageLeafH = 29;
   static double imageLeafW = 29;
 
+//icon
+  static double iconDrH = 5;
+  static double iconDrW = 10;
+  static double iconDrPH = 11;
+  static double iconDrPW = 10;
 
 
 
@@ -60,8 +83,6 @@ class AppSizes {
 
 
 
-
-  static double defaultPadding(BuildContext context) => width(context)* 0.04;
   ///main screen body section
   static double containerHeightLg(BuildContext context) =>height (context) *  0.22;
   static double opCoHeight(BuildContext context) => width(context) *  0.2;

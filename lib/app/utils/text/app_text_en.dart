@@ -35,7 +35,9 @@ class AppTextEn {
 /// home
   static const String goodMorning = 'Good Morning';
   static const String ahmedAriyan = 'Ahmed Ariyan';
-  static const String healthyEnvironment = 'You are in a healthy environment';
+  static const String youAre  = 'You are in a';
+  static const String healthy = ' healthy ';
+  static const String environment = 'environment';
   static const String myPlaces = 'My Places';
   static const String home = 'Home';
   static const String good = 'Good';
@@ -74,6 +76,12 @@ class AppTextEn {
   static const String totalComputers = 'Total Computers';
   static const String totalIndoorPlants = 'Total Indoor Plants';
   static const String totalKitchenBurner = 'Total Kitchen Burner';
+  static const String fiftyTwo = '52';
+  static const String seven = '7';
+  static const String thirtySevenHundred = '3700';
+  static const String two = '2';
+  static const String sixty = '60';
+  static const String twentyThree = '23';
   static const String calculateCarbonEmission = 'Calculate Carbon Emission';
 
   ///result screen

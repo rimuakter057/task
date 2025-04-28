@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task/app/utils/theme/theme.dart';
 
+import '../features/add/ui/screen/add_screen.dart';
 import '../features/home/ui/screen/home_screen.dart';
 
 class Task extends StatelessWidget {
@@ -13,7 +14,7 @@ class Task extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme(context),
-      home: HomeScreen(),
+      home: AddScreen(),
     );
   }
 }
