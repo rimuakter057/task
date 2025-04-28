@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:task/app/utils/theme/theme.dart';
+import 'package:task/features/auth/ui/screens/reset_password_screen.dart';
 
 import '../features/add/ui/screen/add_screen.dart';
+import '../features/auth/ui/screens/send_otp_screen.dart';
 import '../features/auth/ui/screens/sign_in_screen.dart';
 import '../features/auth/ui/screens/sign_up_screen.dart';
 import '../features/home/ui/screen/home_screen.dart';
@@ -16,7 +18,7 @@ class Task extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme(context),
-      home: SignUpScreen(),
+      home: SendOtpScreen(),
     );
   }
 }

@@ -80,7 +80,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       Text(AppTextEn.confirmPassword,style: textTheme.labelMedium,),
                       TextFormField(
-
                         decoration: InputDecoration(
                             suffixIcon: Icon(Icons.visibility_off_outlined),
                             hintText: AppTextEn.confirmPassword
