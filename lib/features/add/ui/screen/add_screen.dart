@@ -61,7 +61,8 @@ class _AddScreenState extends State<AddScreen> {
           CalculateWidget(text: AppTextEn.totalComputers, number: AppTextEn.sixty,),
           CalculateWidget(text: AppTextEn.totalIndoorPlants, number: AppTextEn.twentyThree,),
           CalculateWidget(text: AppTextEn.totalKitchenBurner, number: AppTextEn.two,),
-
+          ElevatedButton(onPressed: (){},
+              child:Text(AppTextEn.calculateCarbonEmission))
 
         ],),
       ),

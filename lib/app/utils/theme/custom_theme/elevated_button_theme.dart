@@ -12,6 +12,7 @@ class AppElevatedButtonTheme {
       style: ElevatedButton.styleFrom(
         minimumSize:  Size(AppSizes.width(context), 42),
         backgroundColor: AppColors.primaryColor,
+        foregroundColor: AppColors.white,
         textStyle: Theme.of(context).textTheme.titleMedium,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
