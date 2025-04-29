@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task/app/utils/sizes.dart';
 import 'package:task/app/utils/text/app_text_en.dart';
+import 'package:task/features/common/Widget/custom_rich_text.dart';
 
 import '../widget/rich_text_widget.dart';
 
@@ -26,6 +27,10 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
             children: [
               Text(AppTextEn.verifyOtp,style:textTheme.headlineLarge ,),
               Text(AppTextEn.recoverAccountEasySteps,style: textTheme.headlineSmall,),
+              CustomRichText(firstText: "an email has been sent to ",
+                  secondText: AppTextEn.userExample,
+                  thirdText: " please enter the sent otp"),
+              
               Form(
                   key: _formKey,
                   child: Column(

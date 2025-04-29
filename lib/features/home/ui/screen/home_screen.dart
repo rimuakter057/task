@@ -24,6 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     var textTheme= Theme.of(context).textTheme;
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppColors.primaryColor,
+        onPressed: (){},
+      child: Icon(Icons.add,color: AppColors.white,),
+      ),
       body:Column(children: [
         ///header section
         _buildHeaderContainer(context,textTheme),
@@ -32,10 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            
             Text(AppTextEn.myPlaces,style: textTheme.bodyLarge,),
-            
-            
             Padding(
               padding:  EdgeInsets.all(AppSizes.defaultPadding(context)),
               child: Column(
@@ -50,11 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-          
           ],
           ),
         )
-        
       ],
       )
     );

@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:task/app/utils/sizes.dart';
 import 'package:task/app/utils/text/app_text_en.dart';
 
+import '../../../../app/utils/asset_path.dart';
+import '../widget/icon_widget.dart';
+import '../widget/rich_text_widget.dart';
+
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
@@ -96,6 +100,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
               SizedBox(height: 20,),
               ElevatedButton(onPressed: (){},
                   child: Text(AppTextEn.signUp)),
+              Text("sign up with",style: textTheme.bodySmall,),
+              Padding(
+                padding:  EdgeInsets.all(AppSizes.defaultPadding(context)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    IconWidget(image: AssetImages.googleIcon,),
+                    IconWidget(image: AssetImages.facebookIcon,),
+                    IconWidget(image: AssetImages.microsoftIcon,),
+                    IconWidget(image: AssetImages.appleIcon,),
+                  ],),
+              ),
+              RichTextWidget(normalText: "already have an account? ", actionText:AppTextEn.signIn, onTap: () {
+                debugPrint("sign in");
+              },),
 
             ],),
         )

@@ -46,8 +46,8 @@ class AppSizes {
   static double containerSmR = 10;
 
   //container color
-  static double containerColH = 7;
-  static double containerColW = 24;
+  static double containerColorH = 7.58;
+  static double containerColorW = 58.55;
   static double containerRecH = 150;
   static double containerRecW = 161;
   static double containerRecMH = 17;
@@ -75,6 +75,7 @@ class AppSizes {
   static double iconDrW = 10;
   static double iconDrPH = 11;
   static double iconDrPW = 10;
+  static double iconS = 42;
 
 
 
