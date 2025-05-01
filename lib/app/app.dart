@@ -9,6 +9,8 @@ import '../features/auth/ui/screens/sign_in_screen.dart';
 import '../features/auth/ui/screens/sign_up_screen.dart';
 import '../features/auth/ui/screens/splash_Screen.dart';
 import '../features/home/ui/screen/home_screen.dart';
+import '../features/practice/search_screen.dart';
+import '../features/practice/service/network_caller.dart';
 import '../features/result/ui/result/result_screen.dart';
 
 class Task extends StatelessWidget {
@@ -21,7 +23,7 @@ class Task extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme(context),
-      home: ResultScreen(),
+      home: SearchScreen(),
     );
   }
 }
